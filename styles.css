@@ -1,0 +1,148 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    background-color: #f5ebe0;
+}
+
+header {
+    background-image: url('<a href="https://ibb.co/F6dDkgK"><img src="https://i.ibb.co/rkXwK4m/salon-cosmelan-slider-jpg.webp" alt="salon-cosmelan-slider-jpg" border="0"></a>'); /* Replace with a relevant image URL */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+    z-index: 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+}
+
+nav {
+    background-color: #d6ccc2;
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    margin: 0 20px;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #d5bdaf;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #d5bdaf;
+    font-family: 'Playfair Display', serif;
+}
+
+.services, .portfolio, .testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-item, .portfolio-item, .testimonial-item {
+    flex: 1 1 30%;
+    margin: 15px;
+    padding: 20px;
+    border: 1px solid #d5bdaf;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.service-item h3, .testimonial-item p:first-child {
+    color: #d6ccc2;
+}
+
+.portfolio-item.full-page {
+    flex: 1 1 100%;
+}
+
+.video-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #d5bdaf;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.contact-form label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #d5bdaf;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #d6ccc2;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background-color: #b59f8e;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #d6ccc2;
+    color: #fff;
+    position: relative;
+}
+
+footer p {
+    margin: 5px 0;
+}
